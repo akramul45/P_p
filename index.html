@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Analytics Tool</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla&family=Roboto&family=Mulish:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">🎬</div>
+        <h1>YouTube Analytics Tool</h1>
+        <nav>
+            <ul>
+                <li>Dashboard</li>
+                <li>Reports</li>
+                <li>Settings</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Input Section -->
+    <section class="input-section">
+        <input type="text" id="videoInput" placeholder="ভিডিও URL / ID দিন">
+        <button id="postBtn">📋 পোস্ট</button>
+        <div class="generate-wrap">
+            <button id="generateBtn">Generate</button>
+        </div>
+    </section>
+
+    <!-- Video Info -->
+    <section id="videoInfo" class="video-info">
+        <div class="left">
+            <img id="thumbnail" alt="Thumbnail" />
+            <button id="downloadBtn">⬇️ Download</button>
+            <p id="uploadTime"></p>
+            <div id="stats">
+                👁 <span id="views">0</span> 
+                👍 <span id="likes">0</span> 
+                👎 <span id="dislikes">0</span> 
+                💬 <span id="comments">0</span>
+            </div>
+        </div>
+        <div class="right">
+            <div class="title-row">
+                <h2 id="videoTitle"></h2>
+                <button id="copyTitle">📋</button>
+            </div>
+            <p><b>Audience:</b> <span id="audienceType"></span></p>
+            <p><b>Category:</b> <span id="category"></span></p>
+            <p><b>License:</b> <span id="license"></span></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© আকরামুল | Visit Count: <span id="visitCount">0</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
